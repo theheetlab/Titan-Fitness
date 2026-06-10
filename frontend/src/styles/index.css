@@ -1847,6 +1847,17 @@ img {
   .admin-stats {
     grid-template-columns: 1fr;
   }
+  .admin-login-card {
+    padding: 32px 20px;
+  }
+  .admin-login-card h1 {
+    font-size: 1.6rem;
+  }
+  .admin-table td,
+  .admin-table th {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1872,18 +1883,54 @@ img {
     display: flex;
   }
   .admin-main {
-    padding: 20px;
+    padding: 70px 16px 24px;
   }
   .admin-stats {
     grid-template-columns: 1fr;
   }
   .admin-table {
     font-size: 0.8rem;
+    min-width: 600px;
+  }
+  .admin-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .admin-header {
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
+  }
+  .admin-header h1 {
+    font-size: 1.3rem;
+    padding-right: 40px;
+  }
+  .admin-stat-card {
+    padding: 18px;
+  }
+  .admin-stat-card .number {
+    font-size: 1.6rem;
+  }
+  .modal {
+    padding: 24px 20px;
+    margin: 10px;
+    max-height: 90vh;
+  }
+  .modal-actions {
+    flex-direction: column;
+  }
+  .admin-table td,
+  .admin-table th {
+    padding: 10px 12px;
+    white-space: nowrap;
+  }
+  .admin-nav-item {
+    padding: 12px 14px;
+    font-size: 0.85rem;
+  }
+  .admin-sidebar-logo {
+    padding: 20px 18px;
+    font-size: 1.2rem;
   }
 }
 
@@ -1958,9 +2005,9 @@ img {
 .admin-mobile-toggle {
   display: none;
   position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 101;
+  top: 12px;
+  left: 12px;
+  z-index: 102;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
@@ -1968,6 +2015,7 @@ img {
   background: var(--dark);
   border: 1px solid var(--border);
   border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 
 .admin-mobile-toggle span {
@@ -1976,4 +2024,16 @@ img {
   background: white;
   border-radius: 2px;
   transition: all 0.3s ease;
+}
+
+.admin-mobile-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.admin-mobile-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.admin-mobile-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }

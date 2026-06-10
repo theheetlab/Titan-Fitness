@@ -47,7 +47,7 @@ function AdminLayout() {
 
   return (
     <div className="admin-layout">
-      <button className="admin-mobile-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>
+      <button className={`admin-mobile-toggle${sidebarOpen ? ' open' : ''}`} onClick={() => setSidebarOpen(!sidebarOpen)}>
         <span></span>
         <span></span>
         <span></span>
