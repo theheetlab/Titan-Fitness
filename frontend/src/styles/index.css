@@ -1393,6 +1393,231 @@ img {
   }
 }
 
+/* ============= SMALL SCREENS (≤480px) ============= */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+    padding: 0 8px;
+    margin-bottom: 32px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .hero-stat-number {
+    font-size: 1.5rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.7rem;
+  }
+
+  .feature-card {
+    padding: 24px 18px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem;
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .plan-card {
+    padding: 24px 18px;
+  }
+
+  .plan-name {
+    font-size: 1.3rem;
+  }
+
+  .plan-price .amount {
+    font-size: 2.8rem;
+  }
+
+  .plan-price .currency {
+    font-size: 1rem;
+  }
+
+  .plan-feature {
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+
+  .trainer-image {
+    height: 220px;
+  }
+
+  .trainer-info {
+    padding: 16px;
+  }
+
+  .trainer-name {
+    font-size: 1rem;
+  }
+
+  .trainer-specialization {
+    font-size: 0.8rem;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-review {
+    font-size: 0.85rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item.wide {
+    grid-column: span 1;
+  }
+
+  .about-hero {
+    padding: 140px 0 60px;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .about-hero p {
+    font-size: 0.95rem;
+    padding: 0 12px;
+  }
+
+  .about-story {
+    padding: 40px 0;
+  }
+
+  .about-story .container {
+    gap: 30px;
+  }
+
+  .about-story-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-story-content p {
+    font-size: 0.9rem;
+  }
+
+  .mission-vision {
+    padding: 40px 0;
+  }
+
+  .mv-card {
+    padding: 24px;
+  }
+
+  .mv-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .mv-card p {
+    font-size: 0.85rem;
+  }
+
+  .contact-cta {
+    padding: 40px 0;
+  }
+
+  .contact-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-cta p {
+    font-size: 0.9rem;
+    padding: 0 12px;
+  }
+
+  .contact-form-wrapper {
+    padding: 0 4px;
+  }
+
+  .footer {
+    padding: 40px 0 0;
+  }
+
+  .footer-grid {
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+
+  .navbar-logo-text {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links {
+    width: 100%;
+  }
+
+  .plans-grid {
+    max-width: none;
+  }
+
+  .trainers-grid {
+    max-width: none;
+  }
+
+  .about-story-image {
+    display: none;
+  }
+}
+
 /* ============= ADMIN PANEL ============= */
 .admin-body {
   background: var(--dark-2);
