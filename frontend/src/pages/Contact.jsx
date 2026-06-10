@@ -34,45 +34,35 @@ function Contact() {
 
       <section className="section">
         <div className="container">
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 60,
-            alignItems: 'start'
-          }}>
-            <div>
-              <h2 style={{ fontFamily: "'Oswald', sans-serif", fontSize: '2rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 16 }}>
+          <div className="contact-page-grid">
+            <div className="contact-info-section">
+              <h2 className="contact-page-heading">
                 Get In <span style={{ color: 'var(--primary)' }}>Touch</span>
               </h2>
-              <p style={{ color: 'var(--text-muted)', marginBottom: 32, lineHeight: 1.8 }}>
+              <p className="contact-page-subtext">
                 Ready to start your fitness journey? Visit us, call us, or send a message.
                 Our team is here to help you every step of the way.
               </p>
 
-              <div style={{ marginBottom: 24 }}>
-                <div style={{ fontWeight: 600, marginBottom: 4, color: 'var(--primary)' }}>📍 Address</div>
-                <div style={{ color: 'var(--text-muted)' }}>123 Fitness Street, Gym City, GC 10001</div>
+              <div className="contact-info-item">
+                <div className="contact-info-label">📍 Address</div>
+                <div className="contact-info-value">123 Fitness Street, Gym City, GC 10001</div>
               </div>
-              <div style={{ marginBottom: 24 }}>
-                <div style={{ fontWeight: 600, marginBottom: 4, color: 'var(--primary)' }}>📞 Phone</div>
-                <div style={{ color: 'var(--text-muted)' }}>+1 (555) 123-4567</div>
+              <div className="contact-info-item">
+                <div className="contact-info-label">📞 Phone</div>
+                <div className="contact-info-value">+1 (555) 123-4567</div>
               </div>
-              <div style={{ marginBottom: 24 }}>
-                <div style={{ fontWeight: 600, marginBottom: 4, color: 'var(--primary)' }}>✉️ Email</div>
-                <div style={{ color: 'var(--text-muted)' }}>info@titanfitness.com</div>
+              <div className="contact-info-item">
+                <div className="contact-info-label">✉️ Email</div>
+                <div className="contact-info-value">info@titanfitness.com</div>
               </div>
-              <div style={{ marginBottom: 24 }}>
-                <div style={{ fontWeight: 600, marginBottom: 4, color: 'var(--primary)' }}>🕐 Hours</div>
-                <div style={{ color: 'var(--text-muted)' }}>Mon - Sun: 5:00 AM - 11:00 PM</div>
+              <div className="contact-info-item">
+                <div className="contact-info-label">🕐 Hours</div>
+                <div className="contact-info-value">Mon - Sun: 5:00 AM - 11:00 PM</div>
               </div>
             </div>
 
-            <div style={{
-              background: 'var(--dark-3)',
-              border: '1px solid var(--border)',
-              borderRadius: 'var(--radius-md)',
-              padding: 40
-            }}>
+            <div className="contact-form-card">
               {!submitted ? (
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <div className="form-group">
